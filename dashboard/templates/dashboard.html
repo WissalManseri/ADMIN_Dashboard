@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Admin Dashboard</h1>
+  <div id="signup-chart"></div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    const data = JSON.parse('{{ signup_data_json|escapejs }}');
+    // Use data to create a chart with a JavaScript library like D3.js or Chart.js
+  </script>
+{% endblock %}
